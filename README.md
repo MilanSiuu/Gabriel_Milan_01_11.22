@@ -10,5 +10,6 @@ menüpontok:
   - 2 ~ Egy adott autó kiírása tulajdonossal
   - 3 ~ Új parkoló autó
   - 4 ~ Autó törlése
-  - 5 ~ Összes autó kiírása tulajdonossal
-  
+  - 5 ~ Összes hely száma
+  - 6 ~ Szabad helyek száma
+  - 7 ~ Összes parkoló autó kiírása tulajdonossal
