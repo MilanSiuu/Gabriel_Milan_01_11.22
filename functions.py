@@ -1,3 +1,3 @@
 from data import autókéstulajdonosai
 
-fajl='autók és tulajdonosai'
+fajl='autók és tulajdonosai.txt'
