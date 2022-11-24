@@ -14,3 +14,5 @@ def menu():
     print('5 - Összes hely száma')
     print('6 - Szabad helyek száma')
     print('7 - Összes parkoló autó kiírása tulajdonossal')
+    valasztott=input('Válasszon egy menüpontot: ')
+    return valasztott
