@@ -17,6 +17,9 @@ def menu():
     valasztott=input('Válasszon egy menüpontot: ')
     return valasztott
 
+def fajlBetöltés():
+
+
 def ÖsszesautóKiírása():
     print('Összes parkoló autó:')
     for i in range(0,len(autókéstulajdonosai)):
