@@ -1,3 +1,4 @@
+import time
 from data import *
 from os import system
 from functions import *
@@ -18,9 +19,13 @@ while valasztott!='0':
     elif valasztott=='4':
         pass
     elif valasztott=='5':
-        pass
+        ÖsszesHely()
     elif valasztott=='6':
-        pass
+        SzabadHelyek()
     elif valasztott=='7':
         pass
+    else:
+        system('cls')
+        print('Hibás válasz.')
+        time.sleep(1.5)
     fajlMentes()      
