@@ -1,6 +1,6 @@
 from data import autókéstulajdonosai
 from os import system
-from functions import menu, ÖsszesautóKiírása
+from functions import menu, ÖsszesautóKiírása, fajlBetoltes
 
 valasztott=''
 while valasztott!='0': 
