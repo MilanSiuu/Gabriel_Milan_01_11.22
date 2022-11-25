@@ -1,3 +1,4 @@
+from genericpath import exists
 from data import autókéstulajdonosai
 
 fajl='autók és tulajdonosai.txt'
@@ -17,7 +18,13 @@ def menu():
     valasztott=input('Válasszon egy menüpontot: ')
     return valasztott
 
-def fajlBetöltés():
+def fajlBetoltes():   
+    if exists(fajl):
+        file=open(fajl,'r',encoding='utf-8')
+        for row in file:
+            autókéstulajdonosai.append(row.strip())  
+        file.close()
+        input('A fájl betöltése sikeres volt.')
 
 
 def ÖsszesautóKiírása():
