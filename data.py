@@ -1,1 +1,2 @@
-autókéstulajdonosai=[]
+autok=[]
+tulajdonosok=[]

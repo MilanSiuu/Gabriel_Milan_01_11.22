@@ -1,7 +1,7 @@
 from genericpath import exists
-from data import autókéstulajdonosai
+from data import *
 
-fajl='autók és tulajdonosai.txt'
+fajl='AutokEsTulajdonosai.txt'
 
 def menu():
     system='cls'
@@ -22,12 +22,21 @@ def fajlBetoltes():
     if exists(fajl):
         file=open(fajl,'r',encoding='utf-8')
         for row in file:
-            autókéstulajdonosai.append(row.strip())  
+            halmaz=row.strip().split(';')
+            autok.append(halmaz[0])
+            tulajdonosok.append(halmaz[1])
         file.close()
-        input('A fájl betöltése sikeres volt.')
 
+def fajlMentes():
+    if exists(fajl):
+        file=open(fajl,'w',encoding='UTF-8')
+    for i in range(len(autok)):
+        file.write(f'{autok[i]};{tulajdonosok[i]}\n')
+    file.close()
+    autok.clear()
+    tulajdonosok.clear()
 
 def ÖsszesautóKiírása():
     print('Összes parkoló autó:')
-    for i in range(0,len(autókéstulajdonosai)):
-        print(f'\t{i+1}. {autókéstulajdonosai[i]}')
+    for i in range(0,len(autok)-1):
+        print(f'\t{i+1}. {autok[i]}')

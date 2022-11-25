@@ -1,16 +1,16 @@
-from data import autókéstulajdonosai
+from data import *
 from os import system
-from functions import menu, ÖsszesautóKiírása, fajlBetoltes
+from functions import *
 
 valasztott=''
 while valasztott!='0': 
+    fajlBetoltes()
     system('cls')
     valasztott=menu()
     if valasztott=='1':
          system('cls')
          ÖsszesautóKiírása()
          input('tovább...')
-         fajlBetoltes()
     elif valasztott=='2':
         pass
     elif valasztott=='3':
@@ -23,4 +23,4 @@ while valasztott!='0':
         pass
     elif valasztott=='7':
         pass
-        
+    fajlMentes()      
