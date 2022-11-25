@@ -10,6 +10,7 @@ while valasztott!='0':
          system('cls')
          ÖsszesautóKiírása()
          input('tovább...')
+         fajlBetoltes()
     elif valasztott=='2':
         pass
     elif valasztott=='3':
