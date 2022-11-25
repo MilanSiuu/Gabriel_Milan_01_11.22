@@ -1,5 +1,7 @@
 from genericpath import exists
 from data import *
+from os import system
+import time
 
 fajl='AutokEsTulajdonosai.txt'
 
@@ -43,6 +45,35 @@ def ÖsszesautóKiírása():
         
 def ÖsszesHely():
     print(helyek)
+    time.sleep(2)
 
 def SzabadHelyek():
-    print(helyek-parkoloAutokSzama)
+    parkoloAutokSzama=len(autok)
+    szabad=helyek-parkoloAutokSzama
+    print(szabad)
+    time.sleep(2)
+
+def autoKiírásatulajdonossal():
+    system('cls')
+    bekertautok=input('Adja meg az autó típusát: ').upper()
+    if  bekertautok.upper() in autok:
+        for i,item in enumerate(autok):
+            if bekertautok.upper()==item.upper():
+                print(f'\nAz autó tulajdonosa: {tulajdonosok[i]}')
+                time.sleep(2)
+    else:    
+        print('Ez az autó nem található')
+        time.sleep(1.5)
+
+def autoTörlése():
+    system('cls')
+    bekertautok=input('Adja meg az autó típusát: ').upper()
+    if  bekertautok.upper() in autok:
+        for i,item in enumerate(autok):
+            if bekertautok.upper()==item.upper():
+                autok.pop(i)
+                print(f'Az autó törölve')
+                time.sleep(2)
+    else:    
+        print('Ez az autó nem található')
+        time.sleep(1.5)
