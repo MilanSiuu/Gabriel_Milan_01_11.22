@@ -13,11 +13,11 @@ while valasztott!='0':
          ÖsszesautóKiírása()
          input('tovább...')
     elif valasztott=='2':
-        pass
+        autoKiírásatulajdonossal()
     elif valasztott=='3':
         pass
     elif valasztott=='4':
-        pass
+        autoTörlése()
     elif valasztott=='5':
         ÖsszesHely()
     elif valasztott=='6':
