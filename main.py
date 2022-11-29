@@ -23,9 +23,9 @@ while valasztott!='0':
     elif valasztott=='6':
         SzabadHelyek()
     elif valasztott=='7':
-        pass
+        AutokTulajdonossal()
     else:
         system('cls')
         print('Hibás válasz.')
-        time.sleep(1.5)
+        time.sleep(2)
     fajlMentes()      

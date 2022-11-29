@@ -6,7 +6,7 @@ import time
 fajl='AutokEsTulajdonosai.txt'
 
 def menu():
-    system='cls'
+    system=('cls')
     valasztott=''
     print('------------MENÜ------------')
     print('0 - Kilépés')
@@ -63,7 +63,7 @@ def autoKiírásatulajdonossal():
                 time.sleep(2)
     else:    
         print('Ez az autó nem található')
-        time.sleep(1.5)
+        time.sleep(2)
 
 def autoTörlése():
     system('cls')
@@ -76,7 +76,7 @@ def autoTörlése():
                 time.sleep(2)
     else:    
         print('Ez az autó nem található')
-        time.sleep(1.5)
+        time.sleep(2)
 
 def Ujauto():
     system('cls')
@@ -85,4 +85,11 @@ def Ujauto():
     autok.append(bekertauto.upper())
     tulajdonosok.append(bekertnev.title())
     print('Az adatokat mentettük!')
-    time.sleep(1.5)
+    time.sleep(2)
+
+def AutokTulajdonossal():
+    system('cls')
+    print('Autók és tulajdonosaik: ')
+    for i in range(len(autok)):
+        print(f'\t{autok[i]} - {tulajdonosok[i]}')
+    time.sleep(5)

@@ -18,4 +18,3 @@ FORD NEW PUMA;Kovács András
 VOLKSWAGEN T-CROSS;Szabó Evelin
 SSANGYONG KORANDO;Pusztai Zoltán
 HYUNDAI TUCSON;Kiss Erik
-AUDI S3;Giczi Gábor
