@@ -77,3 +77,12 @@ def autoTörlése():
     else:    
         print('Ez az autó nem található')
         time.sleep(1.5)
+
+def Ujauto():
+    system('cls')
+    bekertauto=input('Kérem adja meg az új autó típusát: ')
+    bekertnev=input('Kérem adja meg az új autó tulajdonosát: ')
+    autok.append(bekertauto.upper())
+    tulajdonosok.append(bekertnev.title())
+    print('Az adatokat mentettük!')
+    time.sleep(1.5)

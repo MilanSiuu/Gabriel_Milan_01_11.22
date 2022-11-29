@@ -15,7 +15,7 @@ while valasztott!='0':
     elif valasztott=='2':
         autoKiírásatulajdonossal()
     elif valasztott=='3':
-        pass
+        Ujauto()
     elif valasztott=='4':
         autoTörlése()
     elif valasztott=='5':
