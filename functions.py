@@ -40,7 +40,7 @@ def fajlMentes():
 
 def ÖsszesautóKiírása():
     print('Összes parkoló autó:')
-    for i in range(0,len(autok)-1):
+    for i in range(0,len(autok)):
         print(f'\t{i+1}. {autok[i]}')
     time.sleep(10)
         
