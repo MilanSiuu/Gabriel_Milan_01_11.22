@@ -11,7 +11,6 @@ while valasztott!='0':
     if valasztott=='1':
          system('cls')
          ÖsszesautóKiírása()
-         input('tovább...')
     elif valasztott=='2':
         autoKiírásatulajdonossal()
     elif valasztott=='3':

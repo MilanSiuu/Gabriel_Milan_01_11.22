@@ -42,6 +42,7 @@ def ÖsszesautóKiírása():
     print('Összes parkoló autó:')
     for i in range(0,len(autok)-1):
         print(f'\t{i+1}. {autok[i]}')
+    time.sleep(10)
         
 def ÖsszesHely():
     print(helyek)
